@@ -1,0 +1,22 @@
+
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#FF8C00" />
+  
+  <!-- Radar/tracking elements -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="3,2" />
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="3,2" />
+  <circle cx="50" cy="50" r="15" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="3,2" />
+  
+  <!-- Radar sweep line -->
+  <path d="M50 50 L85 30" fill="none" stroke="#000000" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="4" fill="#000000" />
+  
+  <!-- Target point -->
+  <circle cx="70" cy="40" r="3" fill="#000000" />
+  <circle cx="70" cy="40" r="6" fill="none" stroke="#000000" stroke-width="1.5" />
+  <circle cx="70" cy="40" r="9" fill="none" stroke="#000000" stroke-width="1" />
+  
+  <!-- Tracking crosshair -->
+  <path d="M70 31 L70 35 M70 45 L70 49 M61 40 L65 40 M75 40 L79 40" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" />
+</svg>

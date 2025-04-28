@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff; /* Light background */
+  --foreground: #171717; /* Dark text */
+  --brand-color: #FF7F50; /* Replace with the exact color from Earn.png */
+  --brand-color-dark: #E5673E; /* A darker shade of the brand color */
+  --brand-color-light: #FFA07A; /* A lighter shade of the brand color */
+}
+
+:root {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand-color);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Dark background */
+    --foreground: #ffffff; /* Light text */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--background);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--color-brand);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--brand-color-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+}
+
+p {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+}
+
